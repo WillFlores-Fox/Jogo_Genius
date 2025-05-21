@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Genius - Jogo</title>
+  <link rel="stylesheet" href="/css/game.css">
+</head>
+
+<body>
+  <header id="header">
+    <div id="logo">GENIUS</div>
+    <div id="menu-buttons">
+      <button id="btn-voltar">Voltar</button>
+      <button id="pause">Pausar</button>
+      <button id="btn-ranking">Ranking</button>
+      <audio id="bg-music" src="/sounds/pixel-dreams.mp3" autoplay loop volume="0.4"></audio>
+      <button id="music-toggle">Musica</button>
+    </div>
+  </header>
+
+  <div id="emoji-rain"></div>
+
+  <div id="ranking-modal" style="display: none">
+    <div class="ranking-card">
+      <h2>Ranking</h2>
+      <table id="ranking-tabela">
+        <tr>
+          <th>Posição</th>
+          <th>Jogador</th>
+          <th>Pontos</th>
+        </tr>
+      </table>
+      <div>
+        <button id="limpar-ranking">Limpar Ranking</button>
+        <button id="fechar-ranking">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <h1 id="game-title">Modo <span id="modo"></span> | Dificuldade <span id="dificuldade"></span></h1>
+  <br>
+  <p id="nivel">Nível: 1</p>
+  <p id="tempo" style="display: none;">Tempo: <span id="cronometro">30</span>s</p>
+  <br>
+  <button id="start">Iniciar</button>
+  <p id="status"></p>
+
+  <div id="game-board" class="grid"></div>
+
+  <script src="/JS/game.js"></script>
+</body>
+
+</html>

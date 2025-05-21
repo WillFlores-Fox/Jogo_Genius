@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  background-image: url('https://i.pinimg.com/originals/87/8d/4b/878d4b7113a683135734352e68e00e58.gif');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Press Start 2P', monospace;
+  color: #c9c9c9;
+  text-shadow: 2px 2px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.menu {
+  background: rgba(0, 0, 0, 0.6);
+  border: 4px solid #410075;
+  padding: 40px 30px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 20px #410075;
+  text-align: center;
+}
+
+.menu h1 {
+  font-size: 3rem;
+  color: #410075;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  font-family: 'Press Start 2P', monospace;
+  background-color: #000;
+  color: #c9c9c9;
+  border: 3px solid #c9c9c9;
+  padding: 10px 20px;
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #410075;
+  transform: scale(1.05);
+}
+
+button.selected {
+  background-color: #410075;
+  border-color: #fff;
+  color: #fff;
+}
+
+#start-game {
+  margin-top: 20px;
+  font-size: 0.7rem;
+}
+
+#music-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #c9c9c9;
+  border: 3px solid #c9c9c9;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10000;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#music-toggle:hover {
+  background-color: #410075;
+  transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+  .menu {
+    padding: 20px 15px;
+  }
+
+  button {
+    padding: 10px;
+    width: 100%;
+  }
+}

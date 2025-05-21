@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    background-image: url('https://i.pinimg.com/originals/87/8d/4b/878d4b7113a683135734352e68e00e58.gif');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Press Start 2P', monospace;
+    color: #c9c9c9;
+    text-shadow: 2px 2px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    animation: entrada 1s ease-out;
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    border-bottom: 4px solid #410075;
+    box-shadow: 0 4px 0 #c9c9c9;
+}
+
+#logo {
+    font-family: 'Press Start 2P', monospace;
+    color: #410075;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+#menu-buttons {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+#menu-buttons button {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.7rem;
+    background-color: #000;
+    color: #c9c9c9;
+    border: 3px solid #c9c9c9;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#menu-buttons button:hover {
+    background-color: #410075;
+    color: #c9c9c9;
+    border: 3px solid #c9c9c9;
+    font-size: 0.7rem;
+    transform: scale(1.05);
+}
+
+#game-title {
+    font-size: 1.3rem;
+    margin: 30px 0 10px 0;
+    text-align: center;
+    color: #c9c9c9;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px #000;
+}
+
+#nivel,
+#tempo,
+#info {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+#cronometro {
+    color: #c9c9c9;
+}
+
+/* Grade de botões */
+.grid {
+    display: grid;
+    gap: 15px;
+    margin: 30px auto;
+    max-width: 400px;
+    width: 90%;
+    justify-content: center;
+    margin: 2rem auto;
+    cursor: pointer;
+}
+
+.btn-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btn-4 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btn-9 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.color {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 4px solid black;
+    image-rendering: pixelated;
+    border-radius: 4px;
+    transition: transform 0.1s, filter 0.1s;
+}
+
+.color.green.active {
+    box-shadow: 0 0 20px 5px lime;
+    border-color: lime;
+}
+
+.color.green:hover {
+    box-shadow: 0 0 20px 5px lime;
+    border-color: lime;
+}
+
+.color.red.active {
+    box-shadow: 0 0 20px 5px red;
+    border-color: red;
+}
+
+.color.red:hover {
+    box-shadow: 0 0 20px 5px red;
+    border-color: red;
+}
+
+.color.yellow.active {
+    box-shadow: 0 0 20px 5px yellow;
+    border-color: yellow;
+}
+
+.color.yellow:hover {
+    box-shadow: 0 0 20px 5px yellow;
+    border-color: yellow;
+}
+
+.color.blue.active {
+    box-shadow: 0 0 20px 5px blue;
+    border-color: blue;
+}
+
+.color.blue:hover {
+    box-shadow: 0 0 20px 5px blue;
+    border-color: blue;
+}
+
+.color.orange.active {
+    box-shadow: 0 0 20px 5px orange;
+    border-color: orange;
+}
+
+.color.orange:hover {
+    box-shadow: 0 0 20px 5px orange;
+    border-color: orange;
+}
+
+.color.purple.active {
+    box-shadow: 0 0 20px 5px violet;
+    border-color: violet;
+}
+
+.color.purple:hover {
+    box-shadow: 0 0 20px 5px violet;
+    border-color: violet;
+}
+
+.color.pink.active {
+    box-shadow: 0 0 20px 5px hotpink;
+    border-color: hotpink;
+}
+
+.color.pink:hover {
+    box-shadow: 0 0 20px 5px hotpink;
+    border-color: hotpink;
+}
+
+.color.cyan.active {
+    box-shadow: 0 0 20px 5px cyan;
+    border-color: cyan;
+}
+
+.color.cyan:hover {
+    box-shadow: 0 0 20px 5px cyan;
+    border-color: cyan;
+}
+
+.color.gray.active {
+    box-shadow: 0 0 20px 5px gray;
+    border-color: gray;
+}
+
+.color.gray:hover {
+    box-shadow: 0 0 20px 5px gray;
+    border-color: gray;
+}
+
+.color.green {
+    background-color: lime;
+}
+
+.color.red {
+    background-color: red;
+}
+
+.color.yellow {
+    background-color: yellow;
+}
+
+.color.blue {
+    background-color: blue;
+}
+
+.color.orange {
+    background-color: orange;
+}
+
+.color.purple {
+    background-color: purple;
+}
+
+.color.pink {
+    background-color: pink;
+}
+
+.color.cyan {
+    background-color: cyan;
+}
+
+.color.gray {
+    background-color: gray;
+}
+
+#start {
+    background-color: #000;
+    color: #c9c9c9;
+    ;
+    border: 3px solid #c9c9c9;
+    ;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start:hover {
+    background-color: #410075;
+    transform: scale(1.05);
+}
+
+#status {
+    margin-top: 1rem;
+    font-size: 1rem;
+    min-height: 1rem;
+}
+
+#emoji-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.emoji {
+    position: fixed;
+    top: -2rem;
+    font-size: 2rem;
+    animation: cair 2s linear forwards;
+}
+
+@keyframes cair {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+#ranking-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#ranking-modal .ranking-card {
+    background-color: rgb(0, 0, 0);
+    border: 5px solid #410075;
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo da tabela dentro do modal */
+#ranking-modal table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#ranking-modal th,
+#ranking-modal td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilo dos botões */
+#ranking-modal button {
+    margin: 10px 5px;
+    padding: 10px 16px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.7rem;
+    background-color: #000;
+    color: #c9c9c9;
+    border: 3px solid #c9c9c9;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#ranking-modal button:hover {
+    background-color: #410075;
+    transform: scale(1.05);
+}
+
+#music-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #c9c9c9;
+  border: 3px solid #c9c9c9;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10000;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#music-toggle:hover {
+  background-color: #410075;
+  transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+    #game-title {
+        font-size: 0.8rem;
+    }
+
+    #menu-buttons {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+    }
+
+    .grid {
+        gap: 10px;
+    }
+
+    #start,
+    #menu-buttons button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.6rem;
+    }
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.gray {
+    background-color: gray;
+}
