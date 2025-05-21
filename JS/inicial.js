@@ -45,7 +45,7 @@ startButton.addEventListener("click", () => {
   startSound.play();
 
   setTimeout(() => {
-    const query = `/html/game.html?mode=${selectedDivision}&difficulty=${selectedDifficulty}`;
+    const query = `game.html?mode=${selectedDivision}&difficulty=${selectedDifficulty}`;
     window.location.href = query;
   }, 300);
 });
