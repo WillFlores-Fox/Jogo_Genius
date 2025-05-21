@@ -201,7 +201,7 @@ botaoPausar.addEventListener("click", () => {
 
 botaoVoltar.addEventListener("click", () => {
   playSound('clickOption');
-  window.location.href = "../inicial.html";
+  window.location.href = "../index.html";
 });
 
 function fimDeJogo() {
