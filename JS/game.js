@@ -40,12 +40,12 @@ const botaoPausar = document.getElementById("pause");
 const botaoVoltar = document.getElementById("btn-voltar");
 
 const sounds = {
-  correct: new Audio('/sounds/correct.mp3'),
-  wrong: new Audio('/sounds/incorrect.mp3'),
-  win: new Audio('/sounds/winner.mp3'),
-  clickSquare: new Audio('/sounds/click.mp3'),
-  clickStart: new Audio('/sounds/start.mp3'),
-  clickOption: new Audio('/sounds/click.mp3'),
+  correct: new Audio('sounds/correct.mp3'),
+  wrong: new Audio('sounds/incorrect.mp3'),
+  win: new Audio('sounds/winner.mp3'),
+  clickSquare: new Audio('sounds/click.mp3'),
+  clickStart: new Audio('sounds/start.mp3'),
+  clickOption: new Audio('sounds/click.mp3'),
 };
 function playSound(name) {
   if (sounds[name]) {

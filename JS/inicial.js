@@ -1,7 +1,7 @@
 // Carrega os sons
-const clickSound = new Audio("/sounds/click.mp3");
-const selectSound = new Audio("/sounds/click.mp3");
-const startSound = new Audio("/sounds/start.mp3");
+const clickSound = new Audio("sounds/click.mp3");
+const selectSound = new Audio("sounds/click.mp3");
+const startSound = new Audio("sounds/start.mp3");
 
 let selectedDivision = null;
 let selectedDifficulty = null;
