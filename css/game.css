@@ -97,7 +97,6 @@ body {
     color: #c9c9c9;
 }
 
-/* Grade de botões */
 .grid {
     display: grid;
     gap: 15px;
@@ -328,7 +327,6 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo da tabela dentro do modal */
 #ranking-modal table {
     width: 100%;
     border-collapse: collapse;

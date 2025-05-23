@@ -47,6 +47,7 @@ const sounds = {
   clickStart: new Audio('sounds/start.mp3'),
   clickOption: new Audio('sounds/click.mp3'),
 };
+
 function playSound(name) {
   if (sounds[name]) {
     sounds[name].currentTime = 0;
@@ -308,4 +309,3 @@ musicToggle.addEventListener("click", () => {
   }
   musicaTocando = !musicaTocando;
 });
-
