@@ -18,7 +18,7 @@
 
 Você pode visualizar o jogo online através do GitHub Pages:
 
-🔗 [Clique aqui para jogar]([https://willflores-fox.github.io/Jogo_Genius/])
+🔗 [Clique aqui para jogar](https://willflores-fox.github.io/Jogo_Genius/)
 
 Ou, para rodar localmente:
 
