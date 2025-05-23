@@ -149,7 +149,7 @@ function iniciarJogo() {
     tempoTexto.style.display = "block";
     cronometro.textContent = tempoRestante;
     cronometroId = setInterval(() => {
-      if (!jogoRodando) return;
+      if(!jogoRodando || pausado) return;
       tempoRestante--;
       cronometro.textContent = tempoRestante;
       if (tempoRestante <= 0) {

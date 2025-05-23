@@ -1,4 +1,3 @@
-// Carrega os sons
 const clickSound = new Audio("sounds/click.mp3");
 const selectSound = new Audio("sounds/click.mp3");
 const startSound = new Audio("sounds/start.mp3");
