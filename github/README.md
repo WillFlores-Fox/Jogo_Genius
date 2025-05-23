@@ -31,11 +31,17 @@ Ou, para rodar localmente:
 
 ## 👨‍💻 Autor
 
-**William Flores**  
+**[William Flores](https://willflores-fox.github.io/portifolio_ofc/)**  
 Projeto desenvolvido para a disciplina de **Programação Web 1 – Curso Técnico em Informática**.
 
 ---
 
+## 📱 Contatos
+
+** 📷 [Instagram](https://www.instagram.com/will_flores_ofc/?igsh=YzJmaHF4Njh0cjR0#)**
+** 👽 [Reddit](https://www.reddit.com/user/Sr-Afton/)**
+** 💬 [Whatsapp](https://wa.me/5551996390515?text=Ol%C3%A1%20William%2C%20gostaria%20de%20falar%20sobre%20oportunidades%20na%20%C3%A1rea%20de%20TI.)**
+---
 ## 📝 Licença
 
 Este projeto é de uso educacional.
